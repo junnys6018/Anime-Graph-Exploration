@@ -29,7 +29,7 @@ namespace AnimeGraphExploration.Services
     {
         public int id { get; set; }
         public string title { get; set; }
-        public MainPicture main_picture { get; set; }
+        public MainPicture? main_picture { get; set; }
         public List<RelatedAnime> related_anime { get; set; }
     }
 

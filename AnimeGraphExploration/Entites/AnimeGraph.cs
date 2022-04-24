@@ -19,7 +19,7 @@ namespace AnimeGraphExploration.Entities
             {
                 Title = item.title,
                 Id = item.id,
-                Picture = item.main_picture.large,
+                Picture = item.main_picture?.large ?? "",
             };
 
             Anime.Add(anime);
