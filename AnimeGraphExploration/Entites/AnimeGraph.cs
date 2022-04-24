@@ -4,12 +4,12 @@ namespace AnimeGraphExploration.Entities
 {
     public class AnimeGraph
     {
-        public List<Anime> Animes { get; set; }
+        public List<Anime> Anime { get; set; }
         public List<AnimeRelation> Relationships { get; set; }
 
         public AnimeGraph()
         {
-            Animes = new List<Anime>();
+            Anime = new List<Anime>();
             Relationships = new List<AnimeRelation>();
         }
 
@@ -22,7 +22,7 @@ namespace AnimeGraphExploration.Entities
                 Picture = item.main_picture.large,
             };
 
-            Animes.Add(anime);
+            Anime.Add(anime);
 
             foreach (RelatedAnime related in item.related_anime)
             {
@@ -37,7 +37,7 @@ namespace AnimeGraphExploration.Entities
 
         public bool Contains(int id)
         {
-            return Animes.Exists(x => x.Id == id);
+            return Anime.Exists(x => x.Id == id);
         }
 
     }
