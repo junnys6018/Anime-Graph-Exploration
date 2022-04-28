@@ -62,8 +62,6 @@ namespace AnimeGraphExploration.Services
             return response;
         }
 
-        // non non byori 17549
-
         public async Task<AnimeGraph> GetAnimeGraph(int id)
         {
             var animeGraph = new AnimeGraph();
